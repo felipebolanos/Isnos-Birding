@@ -192,6 +192,7 @@ export default {
 
 .nosotros__h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 h3 {
