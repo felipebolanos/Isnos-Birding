@@ -57,7 +57,7 @@
     </div>
     <div class="final">
       <p class="final__texto">
-        &copy; 2021 Birding Isnos. All rights reserved - Design & Development
+        &copy; 2021 Isnos Birding . All rights reserved - Design & Development
         by: Grupo63 MinTic UTP - SubGrupo2
       </p>
     </div>
@@ -171,6 +171,6 @@ a.enlace-redes {
 }
 
 .final__texto {
-  font-size: 10px;
+  font-size: 15px;
 }
 </style>
