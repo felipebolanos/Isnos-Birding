@@ -4,105 +4,104 @@
       <div class="left menu">
         <router-link class="item" to="/">
           <img class="ui small image" src="../assets/logo.png" alt="Ecomerce" />
-
         </router-link>
         <template v-for="category in categories" :key="category.id">
           <router-link class="item" :to="category.slug">
-            {{category.Title}}
+            {{ category.Title }}
           </router-link>
         </template>
-
       </div>
       <!-- Iniciar sesion -->
       <div class="right menu">
+        <template v-if="!token">
+          <router-link class="nav-link item" to="/nosotros">
+            Nosotros
+          </router-link>
+          <router-link class="nav-link item" to="/servicios">
+            Servicios
+          </router-link>
+          <router-link class="nav-link item" to="/noticias">
+            Noticias
+          </router-link>
+          <router-link class="nav-link item" to="/ayudar">
+            ¿Cómo ayudar?
+          </router-link>
+          <router-link class="item" to="/login"> Iniciar sesión </router-link>
+        </template>
 
-       <template v-if="!token">
-        <router-link class="nav-link item" to="/nosotros"> Nosotros </router-link >
-        <router-link class="nav-link item" to="/servicios"> Servicios </router-link>
-        <router-link class="nav-link item" to="/noticias"> Noticias </router-link>
-        <router-link class="nav-link item" to="/ayudar"> ¿Cómo ayudar? </router-link>
-          <router-link class="item" to="/login" >
-          Iniciar sesión
-        </router-link>
-
-        </template>  
-
-        
-<!-- 
+        <!-- 
        <a class="ui item" href="/nosotros">Nosotros</a>
        <a class="ui item" href="/servicios">Servicios</a>
         <a class="ui item" href="/noticias">Noticias</a>
             <a class="ui item" href="/ayudar">¿Cómo ayudar?</a> -->
-            
 
-            <!-- <router-link class="item" to="/login" v-if="!token">
+        <!-- <router-link class="item" to="/login" v-if="!token">
           Iniciar sesión
         </router-link> -->
 
         <template v-if="token">
           <!-- <router-link class="item" to="/orders">Reservas</router-link> -->
-           <router-link class="nav-link item" to="/nosotros"> Nosotros </router-link >
-        <router-link class="nav-link item" to="/Servicios"> Servicios </router-link>
-        <router-link class="nav-link item" to="/Noticias"> Noticias </router-link>
-        <router-link class="nav-link item" to="/ayudar"> ¿Cómo ayudar? </router-link>
+          <router-link class="nav-link item" to="/nosotros">
+            Nosotros
+          </router-link>
+          <router-link class="nav-link item" to="/Servicios">
+            Servicios
+          </router-link>
+          <router-link class="nav-link item" to="/Noticias">
+            Noticias
+          </router-link>
+          <router-link class="nav-link item" to="/ayudar">
+            ¿Cómo ayudar?
+          </router-link>
           <span class="ui item cart">
-            <i class="earlybirds icon"  @click="openCart"></i>
-            
+            <i class="earlybirds icon" @click="openCart"></i>
           </span>
           <span class="ui item logout" @click="logout">
             <i class="sign-out icon"></i>
           </span>
-
-          </template>
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import {ref, onMounted} from 'vue';
-import { useStore } from 'vuex';
-import {getTokenApi, deleteTokenApi} from '../api/token';
-import {getCategoriesApi} from '../api/category';
-
-
+import { ref, onMounted } from "vue";
+import { useStore } from "vuex";
+import { getTokenApi, deleteTokenApi } from "../api/token";
+import { getCategoriesApi } from "../api/category";
 
 export default {
-  name: 'Menu',
+  name: "Menu",
 
-  setup(){
-    let categories= ref(null);
-    const token= getTokenApi();
+  setup() {
+    let categories = ref(null);
+    const token = getTokenApi();
     const store = useStore();
 
-    onMounted(async()=>{
+    onMounted(async () => {
       const response = await getCategoriesApi();
-      categories.value =(response);
+      categories.value = response;
     });
 
-
-  const logout=()=>{
-    console.log("Cerrar sesión");
-    deleteTokenApi();
-    location.replace('/');
-  };
-
-  const openCart = () => {
-      store.commit('setShowCart', true);
+    const logout = () => {
+      console.log("Cerrar sesión");
+      deleteTokenApi();
+      location.replace("/");
     };
 
+    const openCart = () => {
+      store.commit("setShowCart", true);
+    };
 
-  return{
-    token,
-    logout,
-    categories,
-    openCart,
-  };
-},
+    return {
+      token,
+      logout,
+      categories,
+      openCart,
+    };
+  },
 };
-
-
-
 </script>
 
 <style lang="scss" scoped>
