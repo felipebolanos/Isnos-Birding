@@ -2,4 +2,8 @@
 
 Web Isnos Birding VUE
 
-UTP MinTIC
+UTP MinTIC - G2 - G63
+
+Integrantes:
+
+Felipe Bolaños
