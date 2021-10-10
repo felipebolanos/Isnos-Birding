@@ -8,3 +8,6 @@ Integrantes:
 
 Felipe Bolaños
 Sofía Martínez
+Alexis Vides
+Audis Munive
+Cindy García
