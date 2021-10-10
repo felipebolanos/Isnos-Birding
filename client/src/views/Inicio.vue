@@ -1,189 +1,173 @@
 <template>
-  
-    <main class="servicios-cont section-container">
+  <main class="servicios-cont section-container">
+    <h2 class="title">
+      <span class="title__span">s</span>
+      <span class="title__span">e</span>
+      <span class="title__span">r</span>
+      <span class="title__span">v</span>
+      <span class="title__span">i</span>
+      <span class="title__span">c</span>
+      <span class="title__span">i</span>
+      <span class="title__span">o</span>
+      <span class="title__span">s</span>
+    </h2>
+
+    <div class="card__container">
+      <div class="card">
+        <img class="card__img" src="../assets/conservacion.jpeg" />
+        <h4 class="card__h4">Conservación <i class="earlybirds icon"></i></h4>
+        <p class="card__p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
+          excepturi unde?
+        </p>
+        <router-link class="card__link" to="/servicios"> Leer más </router-link>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="../assets/Educación.jpg" />
+        <h4 class="card__h4">Educación <i class="book icon"></i></h4>
+        <p class="card__p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
+          excepturi unde?
+        </p>
+        <router-link class="card__link" to="/servicios"> Leer más </router-link>
+      </div>
+
+      <div class="card">
+        <img class="card__img" src="../assets/Ecoturismo.jpg" />
+        <h4 class="card__h4">Ecoturismo <i class="camera retro icon"></i></h4>
+        <p class="card__p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
+          excepturi unde?
+        </p>
+        <router-link class="card__link" to="/servicios"> Leer más </router-link>
+      </div>
+    </div>
+  </main>
+  <!-- FIN SERVICIOS-->
+
+  <!--VIAJES-->
+  <section class="viajes section-container" id="book">
+    <h2 class="title">
+      <span class="title__span">r</span>
+      <span class="title__span">e</span>
+      <span class="title__span">s</span>
+      <span class="title__span">e</span>
+      <span class="title__span">r</span>
+      <span class="title__span">v</span>
+      <span class="title__span">a</span>
+      <span class="title__span">s</span>
+    </h2>
+
+    <div class="row">
+      <div class="row__image">
+        <img class="row__img" src="../assets/ruta5.jpg" alt="" />
+      </div>
+
+      <form class="form" action="">
+        <div class="form__inputBox">
+          <h3 class="form__h3">Destino</h3>
+          <input class="form__input" type="text" placeholder="Lugar" />
+        </div>
+        <div class="form__inputBox">
+          <h3 class="form__h3">Personas</h3>
+          <input
+            class="form__input"
+            type="number"
+            placeholder="Numero de personas"
+          />
+        </div>
+        <div class="form__inputBox">
+          <h3 class="form__h3">Ida</h3>
+          <input class="form__input" type="date" />
+        </div>
+        <div class="form__inputBox">
+          <h3 class="form__h3">Vuelta</h3>
+          <input class="form__input" type="date" />
+        </div>
+        <input type="submit" class="btn" value="Reservar" />
+      </form>
+    </div>
+  </section>
+
+  <!--INICIO RUTAS Y TRAVESIAS-->
+  <section class="travesias section-container">
+    <div class="travesias__div">
       <h2 class="title">
-        <span class="title__span">s</span>
-        <span class="title__span">e</span>
-        <span class="title__span">r</span>
-        <span class="title__span">v</span>
-        <span class="title__span">i</span>
-        <span class="title__span">c</span>
-        <span class="title__span">i</span>
-        <span class="title__span">o</span>
-        <span class="title__span">s</span>
+        <span class="title__span">R</span>
+        <span class="title__span">U</span>
+        <span class="title__span">T</span>
+        <span class="title__span">A</span>
+        <span class="title__span">S</span>
       </h2>
+      <div class="travesias__items">
+        <div class="destinos">
+          <div>
+            <h3>Puracé</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/ruta8.jpg" alt="" />
+            </router-link>
+          </div>
+          <div>
+            <h3>Cueva de los Guácharos</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/repo6.jpeg" alt="" />
+            </router-link>
+          </div>
 
-      <div class="card__container">
-        <div class="card">
-          <img class="card__img" src="../assets/conservacion.jpeg" />
-          <h4 class="card__h4">Conservacion <i class="earlybirds icon"></i></h4>
-          <p class="card__p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-            excepturi unde?
-          </p>
-          <a class="card__link" href="/servicios">Leer más</a>
+          <div>
+            <h3>Bordones</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/ruta7.jpg" alt="" />
+            </router-link>
+          </div>
+
+          <div>
+            <h3>Caquetá</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/ruta1.jpeg" alt="" />
+            </router-link>
+          </div>
+
+          <div>
+            <h3>ídolos</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/ruta10.jpeg" alt="" />
+            </router-link>
+          </div>
+
+          <div>
+            <h3>Putumayo</h3>
+            <router-link to="/">
+              <img class="destinos__img" src="../assets/ruta11.jpeg" alt="" />
+            </router-link>
+          </div>
         </div>
+        <div class="tour">
+          <div class="tour__div">
+            <h3 class="tour__titulo">
+              ¿Quieres vivir una experiencia inolvidable?
+            </h3>
+            <p class="tour__cotiza">Encuentra las próximas travesías...</p>
 
-        <div class="card">
-          <img class="card__img" src="../assets/Educación.jpg" />
-          <h4 class="card__h4">Educación <i class="book icon"></i></h4>
-          <p class="card__p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-            excepturi unde?
-          </p>
-          <a class="card__link" href="/servicios">Leer más</a>
-        </div>
-
-        <div class="card">
-          <img class="card__img" src="../assets/Ecoturismo.jpg" />
-          <h4 class="card__h4">
-            Ecoturismo <i class="camera retro icon"></i>
-          </h4>
-          <p class="card__p">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-            excepturi unde?
-          </p>
-          <a class="card__link" href="/servicios">Leer más</a>
-        </div>
-      </div>
-    </main>
-    <!-- FIN SERVICIOS-->
-
-    <!--VIAJES-->
-    <section class="viajes section-container" id="book">
-      <h2 class="title">
-        <span class="title__span">r</span>
-        <span class="title__span">e</span>
-        <span class="title__span">s</span>
-        <span class="title__span">e</span>
-        <span class="title__span">r</span>
-        <span class="title__span">v</span>
-         <span class="title__span">a</span>
-          <span class="title__span">s</span>
-      </h2>
-
-      <div class="row">
-        <div class="row__image">
-          <img class="row__img" src="../assets/ruta5.jpg" alt="" />
-        </div>
-
-        <form class="form" action="">
-          <div class="form__inputBox">
-            <h3 class="form__h3">Destino</h3>
-            <input class="form__input" type="text" placeholder="Lugar" />
-          </div>
-          <div class="form__inputBox">
-            <h3 class="form__h3">Personas</h3>
-            <input
-              class="form__input"
-              type="number"
-              placeholder="Numero de personas"
-            />
-          </div>
-          <div class="form__inputBox">
-            <h3 class="form__h3">Ida</h3>
-            <input class="form__input" type="date" />
-          </div>
-          <div class="form__inputBox">
-            <h3 class="form__h3">Vuelta</h3>
-            <input class="form__input" type="date" />
-          </div>
-          <input type="submit" class="btn" value="Reservar" />
-        </form>
-      </div>
-    </section>
-
-    <!--INICIO RUTAS Y TRAVESIAS-->
-    <section class="travesias section-container">
-      <div class="travesias__div">
-        <h2 class="title">
-          <span class="title__span">R</span>
-          <span class="title__span">U</span>
-          <span class="title__span">T</span>
-          <span class="title__span">A</span>
-          <span class="title__span">S</span>
-         
-        </h2>
-        <div class="travesias__items">
-          <div class="destinos">
-            <div>
-              <h3> Puracé</h3>
-            <a href="/rutas-y-destinos">
-            <img
-              class="destinos__img "
-              src="../assets/ruta8.jpg"
-              alt=""
-            />
-            </a>
-            </div>
-            <div>
-              <h3>Cueva de los Guacharos</h3>
-            <a href="/rutas-y-destinos">
-            <img class="destinos__img" src="../assets/repo6.jpeg" alt="" />
-            </a>
-            </div>
-
-            <div>
-              <h3>Bordones</h3>
-            <a href="/rutas-y-destinos">
-            <img
-              class="destinos__img"
-              src="../assets/ruta7.jpg"
-              alt=""
-            />
-            </a>
-            </div>
-
-            <div>
-              <h3>Caquetá</h3>
-            <a href="/rutas-y-destinos">
-            <img class="destinos__img" src="../assets/ruta1.jpeg" alt="" /> 
-            </a>
-            </div>
-
-            <div>
-              <h3>ídolos</h3>
-            <a href="/rutas-y-destinos">
-            <img class="destinos__img" src="../assets/ruta10.jpeg" alt="" />
-            </a>
-            </div>
-
-            <div>
-              <h3>Putumayo</h3>
-            <a href="/rutas-y-destinos">
-            <img class="destinos__img" src="../assets/ruta11.jpeg" alt="" />
-            </a>
-            </div>
-          </div>
-          <div class="tour">
-            <div class="tour__div">
-              <h3 class="tour__titulo">
-                ¿Quieres vivir una experiencia inolvidable?
-              </h3>
-              <p class="tour__cotiza">Encuentra las próximas travesías...</p>
-
-              <p class="tour__cotiza">Cotice su tour</p>
-              <a class="tour__btn" href="/servicios">leer más</a>
-            </div>
+            <p class="tour__cotiza">Cotiza un tour</p>
+            <a class="tour__btn" href="/servicios">Leer más</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-name: 'Inicio',
-components: {
-    
-  },
+  name: "Inicio",
+  components: {},
 };
-
 </script>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 :root {
   --theme-color: white;
   --primary-color: #124f88;
@@ -204,7 +188,7 @@ components: {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   outline: none;
 }
@@ -215,10 +199,9 @@ body {
   border-radius: 150px;
 }
 
-h3{
-  text-align:center;
+h3 {
+  text-align: center;
 }
-
 
 /*INICIO SECCION SERVICIOS*/
 
@@ -257,8 +240,8 @@ h3{
 }
 
 .card {
-  width: 20rem;
-  height: 26rem;
+  width: 22rem;
+  height: 28rem;
   border-radius: 0.5rem;
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -395,12 +378,9 @@ h3{
   cursor: pointer;
 }
 
-
-.destinos__img:hover{
-  
+.destinos__img:hover {
   transition: 0.7s;
   transform: scale(1.3);
-
 }
 
 .tour {
@@ -414,7 +394,7 @@ h3{
   flex-direction: column;
   align-items: center;
   border: 0.06rem solid #00000062;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   justify-content: center;
   height: 100%;
@@ -456,10 +436,10 @@ h3{
 }
 
 .destinos__img {
-    max-width: 80%;
-    width: 200px;
-  height: 200px;
-  }
+  max-width: 80%;
+  width: 250px;
+  height: 210px;
+}
 
 @media (max-width: 780px) {
   .tour {
@@ -467,8 +447,6 @@ h3{
   }
   .destinos__img {
     width: 100%;
-   
   }
 }
-
 </style>
