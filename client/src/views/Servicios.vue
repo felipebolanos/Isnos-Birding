@@ -1,6 +1,6 @@
 <template>
   <BasicLayouts>
-      <!--INICIO SERVICIOS-->
+    <!--INICIO SERVICIOS-->
     <main class="contenedor-servicios">
       <h2 class="title">
         <span class="title__span">s</span>
@@ -20,14 +20,16 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             porttitor, felis sed commodo placerat, neque urna scelerisque
-            mauris, vel malesuada turpis massa at leo.  <br /><br />Aenean rhoncus malesuada
-            velit nec sollicitudin. Aliquam vehicula, libero vitae tristique
-            fermentum, dolor libero maximus nisi, sed imperdiet risus sapien
-            eget mauris. Proin sed risus suscipit, tristique tellus ut, aliquet
-            ante. Suspendisse eget turpis non lorem posuere tincidunt eleifend
-            nec velit. <br />
+            mauris, vel malesuada turpis massa at leo. <br /><br />Aenean
+            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
+            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
+            risus sapien eget mauris. Proin sed risus suscipit, tristique tellus
+            ut, aliquet ante. Suspendisse eget turpis non lorem posuere
+            tincidunt eleifend nec velit. <br />
           </p>
-          <a class="servicios__boton" href="/register">Solicitar Servicio</a>
+          <router-link class="servicios__boton" to="/register">
+            Solicitar Servicio
+          </router-link>
         </div>
       </div>
 
@@ -39,13 +41,14 @@
             Curabitur egestas nulla tincidunt turpis tincidunt aliquam. Orci
             varius natoque penatibus et magnis dis parturient montes, nascetur
             ridiculus mus. Morbi non hendrerit diam. Cras elementum consequat
-            diam a ullamcorper. <br /><br />Aenean
-            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
-            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
-            risus sapien eget mauris. Proin sed risus suscipit, tristique tellus
-            ut, aliquet ante. <br />
+            diam a ullamcorper. <br /><br />Aenean rhoncus malesuada velit nec
+            sollicitudin. Aliquam vehicula, libero vitae tristique fermentum,
+            dolor libero maximus nisi, sed imperdiet risus sapien eget mauris.
+            Proin sed risus suscipit, tristique tellus ut, aliquet ante. <br />
           </p>
-          <a class="servicios__boton" href="/register">Solicitar Servicio</a>
+          <router-link class="servicios__boton" to="/register">
+            Solicitar Servicio
+          </router-link>
         </div>
       </div>
     </main>
@@ -72,12 +75,13 @@
             Nullam euismod sem viverra pretium tincidunt. Nulla non ultricies
             massa. Vivamus eget libero id dui commodo consectetur nec quis dui.
             Nam augue justo, lobortis ac consequat at, volutpat sit amet libero.
-            <br /><br />Aenean
-            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
-            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
-            risus sapien eget mauris.  <br />
+            <br /><br />Aenean rhoncus malesuada velit nec sollicitudin. Aliquam
+            vehicula, libero vitae tristique fermentum, dolor libero maximus
+            nisi, sed imperdiet risus sapien eget mauris. <br />
           </p>
-          <a class="servicios__boton" href="/register">Solicitar Servicio</a>
+          <router-link class="servicios__boton" to="/register">
+            Solicitar Servicio
+          </router-link>
         </div>
       </div>
 
@@ -89,12 +93,12 @@
             Nam hendrerit porta porta. Duis congue arcu eu risus laoreet rutrum.
             Nullam euismod sem viverra pretium tincidunt. Nulla non ultricies
             massa. Vivamus eget libero id dui commodo consectetur nec quis dui.
-            Nam augue justo, lobortis.<br /><br />Aenean
-            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
-            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
-            risus sapien eget mauris. Proin sed risus suscipit, tristique tellus
-            ut, aliquet ante. Suspendisse eget turpis non lorem posuere.
-         <br />
+            Nam augue justo, lobortis.<br /><br />Aenean rhoncus malesuada velit
+            nec sollicitudin. Aliquam vehicula, libero vitae tristique
+            fermentum, dolor libero maximus nisi, sed imperdiet risus sapien
+            eget mauris. Proin sed risus suscipit, tristique tellus ut, aliquet
+            ante. Suspendisse eget turpis non lorem posuere.
+            <br />
           </p>
           <a class="servicios__boton" href="/register">Solicitar Servicio</a>
         </div>
@@ -107,14 +111,17 @@
           <p>
             Nam hendrerit porta porta. Duis congue arcu eu risus laoreet rutrum.
             Nullam euismod sem viverra pretium tincidunt. Nulla non ultricies
-            massa. <br /><br /> Proin sed risus suscipit, tristique tellus
-            ut, aliquet ante. Suspendisse eget turpis non lorem posuere
-            tincidunt eleifend nec velit. Morbi consectetur lacus a laoreet
-            ultrices. Vivamus porttitor auctor tellus, at blandit nibh
-            ullamcorper sed. Pellentesque sed urna vel sem porttitor molestie.
-            Ut suscipit tortor urna, id feugiat neque vulputate nec. <br />
+            massa. <br /><br />
+            Proin sed risus suscipit, tristique tellus ut, aliquet ante.
+            Suspendisse eget turpis non lorem posuere tincidunt eleifend nec
+            velit. Morbi consectetur lacus a laoreet ultrices. Vivamus porttitor
+            auctor tellus, at blandit nibh ullamcorper sed. Pellentesque sed
+            urna vel sem porttitor molestie. Ut suscipit tortor urna, id feugiat
+            neque vulputate nec. <br />
           </p>
-          <a class="servicios__boton" href="/register">Solicitar Servicio</a>
+          <router-link class="servicios__boton" to="/register">
+            Solicitar Servicio
+          </router-link>
         </div>
       </div>
 
@@ -123,14 +130,16 @@
         <div class="servicios__cont">
           <h2 class="servicios__h2">Curso de fotografía</h2>
           <p>
-            ¡Nam hendrerit porta porta!. <br /><br />Aenean
-            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
-            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
-            risus sapien eget mauris. Proin sed risus suscipit, tristique tellus
-            ut, aliquet ante. Suspendisse eget turpis non lorem posuere
-            tincidunt eleifend nec velit.  <br />
+            ¡Nam hendrerit porta porta!. <br /><br />Aenean rhoncus malesuada
+            velit nec sollicitudin. Aliquam vehicula, libero vitae tristique
+            fermentum, dolor libero maximus nisi, sed imperdiet risus sapien
+            eget mauris. Proin sed risus suscipit, tristique tellus ut, aliquet
+            ante. Suspendisse eget turpis non lorem posuere tincidunt eleifend
+            nec velit. <br />
           </p>
-          <a class="servicios__boton" href="/register">Solicitar Servicio</a>
+          <router-link class="servicios__boton" to="/register">
+            Solicitar Servicio
+          </router-link>
         </div>
       </div>
       <a class="ir-arriba" href="#">
@@ -138,23 +147,20 @@
       </a>
     </div>
     <!--FIN SERVICIOS-->
-
   </BasicLayouts>
 </template>
 
 <script>
-import BasicLayouts from '../layouts/BasicLayouts.vue'
+import BasicLayouts from "../layouts/BasicLayouts.vue";
 export default {
-    name:'Servicios',
-    components: {
-      BasicLayouts,
-    
+  name: "Servicios",
+  components: {
+    BasicLayouts,
   },
-}
+};
 </script>
 
 <style>
-
 /*INICIO PAGINA SERVICIOS**/
 .header__fondo-servicios {
   background-image: linear-gradient(
@@ -233,6 +239,4 @@ export default {
 }
 
 /*FIN PAGINA SERVICIOS*/
-
-
 </style>
