@@ -2,25 +2,31 @@
   <footer class="section-footer">
     <div class="pie">
       <div class="pie__logo">
-        <a href="/">
-        <img class="pie__img" src="../assets/logo_n.png" alt="logo" />
-        </a>
-        <p> Isnos Birding.</p>
-        
+        <router-link class="pie__img" to="/">
+          <img class="pie__img" src="../assets/logo_n.png" alt="logo" />
+        </router-link>
+
+        <p>Isnos Birding.</p>
       </div>
       <nav class="pie__nav">
         <ul class="pie__enlaces">
           <li class="pie__li">
-            <a class="enlaces" href="/ayudar">¿Cómo Ayudar?</a>
+            <router-link class="enlaces" to="/ayudar">
+              ¿Cómo Ayudar?
+            </router-link>
           </li>
           <li class="pie__li">
-            <a class="enlaces" href="/login">Únete al equipo</a>
+            <router-link class="enlaces" to="/login">
+              Únete al equipo
+            </router-link>
           </li>
         </ul>
       </nav>
       <nav class="pie__nav">
         <ul class="pie__enlaces">
-          <li class="pie__li"><a class="enlaces" href="/ayudar">Donaciones</a></li>
+          <li class="pie__li">
+            <router-link class="enlaces" to="/ayudar"> Donaciones </router-link>
+          </li>
           <li class="pie__li">
             <a class="enlaces" href="">Tours</a>
           </li>
@@ -36,10 +42,13 @@
         </div>
         <div class="pie__redes">
           <a class="enlace-redes" href="https://www.facebook.com/IsnosBirding">
-          <i class="facebook square icon"> </i>
+            <i class="facebook square icon"> </i>
           </a>
-          <a class="enlace-redes" href="https://www.instagram.com/isnosbirding/">
-          <i class="instagram icon"></i>
+          <a
+            class="enlace-redes"
+            href="https://www.instagram.com/isnosbirding/"
+          >
+            <i class="instagram icon"></i>
           </a>
           <i class="youtube icon"></i>
           <i class="twitter icon"></i>
@@ -62,8 +71,6 @@ export default {
 </script>
 
 <style>
-
-
 .section-footer {
   background: #000000;
   display: flex;
@@ -150,9 +157,9 @@ export default {
   transform: scale(1.3);
 }
 
-a.enlace-redes{
-   text-decoration: none;
-  color:rgb(248, 247, 247);
+a.enlace-redes {
+  text-decoration: none;
+  color: rgb(248, 247, 247);
 }
 
 .final {
