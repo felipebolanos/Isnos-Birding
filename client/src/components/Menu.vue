@@ -16,23 +16,35 @@
       <!-- Iniciar sesion -->
       <div class="right menu">
 
-       
-
-        
-
-       <a class="ui item" href="/nosotros">Nosotros</a>
-       <a class="ui item" href="/servicios">Servicios</a>
-        <a class="ui item" href="/noticias">Noticias</a>
-            <a class="ui item" href="/ayudar">¿Cómo ayudar?</a>
-            
-
-            <router-link class="item" to="/login" v-if="!token">
+       <template v-if="!token">
+        <router-link class="nav-link item" to="/nosotros"> Nosotros </router-link >
+        <router-link class="nav-link item" to="/servicios"> Servicios </router-link>
+        <router-link class="nav-link item" to="/noticias"> Noticias </router-link>
+        <router-link class="nav-link item" to="/ayudar"> ¿Cómo ayudar? </router-link>
+          <router-link class="item" to="/login" >
           Iniciar sesión
         </router-link>
 
+        </template>  
+
+        
+<!-- 
+       <a class="ui item" href="/nosotros">Nosotros</a>
+       <a class="ui item" href="/servicios">Servicios</a>
+        <a class="ui item" href="/noticias">Noticias</a>
+            <a class="ui item" href="/ayudar">¿Cómo ayudar?</a> -->
+            
+
+            <!-- <router-link class="item" to="/login" v-if="!token">
+          Iniciar sesión
+        </router-link> -->
+
         <template v-if="token">
           <!-- <router-link class="item" to="/orders">Reservas</router-link> -->
-           
+           <router-link class="nav-link item" to="/nosotros"> Nosotros </router-link >
+        <router-link class="nav-link item" to="/Servicios"> Servicios </router-link>
+        <router-link class="nav-link item" to="/Noticias"> Noticias </router-link>
+        <router-link class="nav-link item" to="/ayudar"> ¿Cómo ayudar? </router-link>
           <span class="ui item cart">
             <i class="earlybirds icon"  @click="openCart"></i>
             
