@@ -16,14 +16,17 @@
         <div class="nosotros__cont">
           <h2 class="nosotros__h2">¿Quiénes Somos?</h2>
           <p class="nosotros__parrafo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            porttitor, felis sed commodo placerat, neque urna scelerisque
-            mauris, vel malesuada turpis massa at leo. Ut rhoncus lorem
-            tincidunt, porttitor nibh egestas, malesuada sapien. <br />Aenean
-            rhoncus malesuada velit nec sollicitudin. Aliquam vehicula, libero
-            vitae tristique fermentum, dolor libero maximus nisi, sed imperdiet
-            risus sapien eget mauris. Proin sed risus suscipit, tristique tellus
-            ut, aliquet ante. <br />
+            Isnos Birding es una organización de observadores de aves y otras
+            especies del municipio de Isnos (Huila) con la idea de promocionar
+            la observación y monitoreo de aves y otras especies de avifauna en
+            el sur del Huila.
+            <br />El objetivo de esta organización es promover la identificación
+            y conservación de la avifauna del Alto Magdalena a través de
+            educación ambiental y el turismo de naturaleza responsable, que se
+            enfoca en la observación, disfrute y recreación en espacios
+            naturales: incluye el turismo de aventura, el turismo rural y el
+            ecoturismo.
+            <br />
           </p>
         </div>
         <img class="nosotros__img" src="../assets/Ecoturismo.jpg" />
@@ -63,16 +66,24 @@
             <div class="nosotros__team-info">
               <h3 class="nosotros__nombre">Óscar Meneses</h3>
               <div class="nosotros__team-redes">
-                <a class="enlace-redes-team" href="https://www.facebook.com/SoyOscarMeneses/">
-                <i class="facebook square icon"></i>
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.facebook.com/SoyOscarMeneses/"
+                >
+                  <i class="facebook square icon"></i>
                 </a>
-               <a class="enlace-redes-team" href="https://www.instagram.com/SoyOscarMeneses/">
-                 <i class="instagram icon"></i>
-               </a>
-                <a class="enlace-redes-team" href="https://twitter.com/SoyOscarMeneses">
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.instagram.com/SoyOscarMeneses/"
+                >
+                  <i class="instagram icon"></i>
+                </a>
+                <a
+                  class="enlace-redes-team"
+                  href="https://twitter.com/SoyOscarMeneses"
+                >
                   <i class="twitter icon"></i>
                 </a>
-                
               </div>
               <p class="nosotros__parrafo">
                 Docente de Ciencias Naturales y Educación Ambiental egresado de
@@ -84,8 +95,6 @@
                 conocedor del territorio.
               </p>
             </div>
-
-            
           </div>
           <div class="nosotros__team-cont nosotros__team-cont--julian">
             <img
@@ -96,13 +105,22 @@
             <div class="nosotros__team-info">
               <h3 class="nosotros__nombre">Julián González</h3>
               <div class="nosotros__team-redes">
-                <a class="enlace-redes-team" href="https://www.facebook.com/Julian.Gonzalez.11">
-                <i class="facebook square icon"></i>
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.facebook.com/Julian.Gonzalez.11"
+                >
+                  <i class="facebook square icon"></i>
                 </a>
-               <a class="enlace-redes-team" href="https://www.instagram.com/dobleyoviajero/">
-                 <i class="instagram icon"></i>
-               </a>
-                <a class="enlace-redes-team" href="https://twitter.com/jgonzalezr11">
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.instagram.com/dobleyoviajero/"
+                >
+                  <i class="instagram icon"></i>
+                </a>
+                <a
+                  class="enlace-redes-team"
+                  href="https://twitter.com/jgonzalezr11"
+                >
                   <i class="twitter icon"></i>
                 </a>
               </div>
@@ -113,7 +131,6 @@
                 observador de aves aficionado.
               </p>
             </div>
-            
           </div>
 
           <div class="nosotros__team-cont nosotros__team-cont--michael">
@@ -125,13 +142,22 @@
             <div class="nosotros__team-info">
               <h3 class="nosotros__nombre">Michael Bolaños</h3>
               <div class="nosotros__team-redes">
-                <a class="enlace-redes-team" href="https://www.facebook.com/Michael.pasaje96">
-                <i class="facebook square icon"></i>
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.facebook.com/Michael.pasaje96"
+                >
+                  <i class="facebook square icon"></i>
                 </a>
-               <a class="enlace-redes-team" href="https://www.instagram.com/Michaelpasajeph/">
-                 <i class="instagram icon"></i>
-               </a>
-                <a class="enlace-redes-team" href="https://twitter.com/michaelpasaje96">
+                <a
+                  class="enlace-redes-team"
+                  href="https://www.instagram.com/Michaelpasajeph/"
+                >
+                  <i class="instagram icon"></i>
+                </a>
+                <a
+                  class="enlace-redes-team"
+                  href="https://twitter.com/michaelpasaje96"
+                >
                   <i class="twitter icon"></i>
                 </a>
               </div>
@@ -278,9 +304,9 @@ h3 {
   box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-a.enlace-redes-team{
+a.enlace-redes-team {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 /*FIN PAGINA NOSOTROS**/
 </style>
