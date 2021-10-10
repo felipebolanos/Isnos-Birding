@@ -7,3 +7,4 @@ UTP MinTIC - G2 - G63
 Integrantes:
 
 Felipe Bolaños
+Sofía Martínez
