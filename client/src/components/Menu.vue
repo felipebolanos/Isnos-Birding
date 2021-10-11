@@ -2,7 +2,7 @@
   <div class="ui secondary menu">
     <div class="ui container">
       <div class="left menu">
-        <router-link class="item" to="/">
+        <router-link class="" to="/">
           <img class="ui small image" src="../assets/logo.png" alt="Ecomerce" />
         </router-link>
         <template v-for="category in categories" :key="category.id">
@@ -106,10 +106,19 @@ export default {
 
 <style lang="scss" scoped>
 .ui.menu.secondary {
-  background-color: #f5540a;
+  //background-color: #f5540a;
+  background-image: url(../assets/Portada.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 300px;
+  width: 100%;
+  position: relative;
 
   .item {
-    color: #ffffff;
+    margin-top: 2rem;
+    color: #161414;
     &:hover {
       color: #f1eceb;
     }
