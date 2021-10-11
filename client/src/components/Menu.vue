@@ -107,20 +107,16 @@ export default {
 <style lang="scss" scoped>
 .ui.menu.secondary {
   //background-color: #f5540a;
-  background-image: url(../assets/Portada.jpeg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-flow: column nowrap;
-  height: 300px;
+   box-shadow: 0 4px 5px #e5e5e5;
+  background-color: #fff;
   width: 100%;
-  position: relative;
+  z-index: 1;
+  background-color: #fff;
 
   .item {
-    margin-top: 2rem;
-    color: #161414;
+    color: #000;
     &:hover {
-      color: #f1eceb;
+      color: #ffa500;
     }
   }
 
