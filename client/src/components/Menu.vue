@@ -63,7 +63,28 @@
       </div>
     </div>
   </div>
+
+<div class="header__fondo">
+      <h1 class="header__titulo">¡Disfruta de la naturaleza</h1>
+      <h2 class="header__titulo header__titulo--h2">con nosotros!</h2>
+
+      <svg
+        preserveAspectRatio="none"
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,224L80,224C160,224,320,224,480,202.7C640,181,800,139,960,133.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
 </template>
+
+
 
 <script>
 import { ref, onMounted } from "vue";
@@ -139,4 +160,72 @@ export default {
     }
   }
 }
+
+.header__fondo {
+  background: linear-gradient(
+      to right,
+      hsla(13, 97%, 55%, 0.058),
+      hsla(40, 92%, 58%, 0.058)
+    ),
+    url(../assets/Portada.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+}
+
+.header__titulo {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  margin: 0 0 0 150px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+}
+
+.header__titulo--h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 0 0 500px;
+}
+
+.wave {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  top: 0.1rem;
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  .header__fondo {
+    background-size: cover;
+    background-position: 30%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .header__titulo {
+    text-align: center;
+    margin: 0 0 0 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__titulo--h2 {
+    margin: 0 0 50px 30px;
+  }
+}
+
+/*FIN HEADER*/
 </style>
